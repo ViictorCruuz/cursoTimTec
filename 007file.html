@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> Javascript - Date()</title>
+    <script type="text/javascript">
+    // Objetos
+    // Date
+    // ao definiar a variável -> new Date()
+
+    var dia = new Date() // Objeto
+    // criar variável -> objeto caraterísticas de Date
+    var hora = dia.getHours();
+    var minutos = dia.getMinutes();
+    var segundos = dia.getSeconds();
+
+    // var hora pague o objeto dia e dentro de dia, selecione as horas
+    // // document.write('No horário de Brasília, agora são exatamente > ' + hora);
+    // document.write(':' + minutos)
+    // document.write(':' + segundos);
+
+    // encadeamento
+    if(hora <= 12){
+        document.write('Bom Dia !!')
+        alert(hora + ':' + minutos)
+    }else if(hora>12 & hora <= 18){
+        document.write('Boa Tarde !!')
+        alert(hora + ':' + minutos)
+    }else if(hora>18){
+        document.write('Boa Noite !!')
+        alert(hora + ':' + minutos)
+    }else{
+        document.write('Acabou o mundo!!!!!!!!')
+    }
+
+    /*
+    Obtém a data/hora atura
+    var data = new Date();
+
+    Guarda cada pedaço em uma variável
+    var dia         = data.getDate();           // 1-31
+    var dia_sem     = data.getDay();            // 0-6      (zero=domingo)
+    var mes         = data.getMonth();          // 0-11     (zero=janeiro)
+    var ano2        = data.getYear();           // 2 dígitos
+    var ano4        = data.getFullYear();       // 4 dígitos
+    var hora        = data.getHours();          // 0-24
+    var min         = data.getMinutes();        // 0-59
+    var seg         = data.getSeconds();        // 0-59
+    var mseg        = data.getMiliseconds();    // 0-999
+    var tz          = data.getTimezoneOffset(); // em minutos
+
+    */
+
+
+
+
+    </script>
+    
+    
+    <body> 
+
+    </body>
+</html>
