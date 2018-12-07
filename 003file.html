@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+/*
+estrutura do for
+for(i=0;i<10;i++){
+
+    i=0 -> inicio da variavel
+    i<10 -> condição ou período em que var i existe
+    i++ -> incremento, adição, de quanto em quanto será adicionado
+
+    document.write("o que vai acontecer");
+}
+*/
+
+//loop
+//while
+        var vetor = [1,2,3,4,5,9];
+        var i = 0;
+
+        while(i<vetor.length){
+            document.write(vetor[i]);
+            i++
+        }
+
+        function teste(){
+            i++
+            document.write("<button onclick='teste()'>"+i+"</button");
+        }
+
+    </script>
+    <title> Vetor</title>
+    <body>
+        <button onclick="teste();">Interativo</button>
+
+    </body>
+</html>

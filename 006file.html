@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> Banner rotativo</title>
+    <script type="text/javascript">
+ 
+        var banners = ["index.jpeg",
+        "michael.jpeg","git.jpeg"];
+        
+        var alternativo = ["texto 1", "texto 2", "texto 3"];
+        var título = ["parangaricotiriairruaro","título 2","algum title"];
+
+        var contador = 0;
+
+        function rotativo() {
+            document.images[0].src = banners[contador];
+            document.images[0].alt = alternativo[contador];
+            document.images[0].title = título[contador];
+
+            contador++
+
+            if(contador == banners.length){
+                contador = 0;
+            }
+            setTimeout("rotativo()", 3500)
+            
+        }
+
+    </script>
+    
+    
+    <body onload="rotativo()">
+        <img/> 
+
+    </body>
+</html>

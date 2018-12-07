@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title> Banner Rotativo</title>
+    <script type="text/javascript">
+        var citacao = [];
+        citacao[0]='Por fora bela viola por dentro pão bolorento';
+        citacao[1]='Não chore pelo leite derramado';
+        citacao[2]='Sigam-me os bons';
+        citacao[3]='Cão que ladra não morde';
+        citacao[4]='O importante não é ganhar, e sim vencer';
+        citacao[5]='Victor Cruz';
+
+        var contador = 0;
+
+
+        // Funções
+        function exibeTexto(){
+            // camel case
+            document.getElementById('texto').innerHTML = citacao[contador]; // innerHTML = me permite escrever dentro do meu elemento que tem o ID texto
+            // auto incrementar o contador
+            contador++
+            // limitador
+            if(contador == citacao.length){
+                contador = 0
+            }
+            //temporizador
+            setTimeout('exibeTexto()', 1000)
+        }
+
+    </script>
+    
+    
+    <body onload="exibeTexto();">
+        <h1> CITAÇÕES </h1>
+        <div id="texto">Victor</div>
+
+    </body>
+</html>

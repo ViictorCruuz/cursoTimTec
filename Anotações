@@ -1,0 +1,33 @@
+Operador       Operação     Definição                   Exemplo
+
+  %             Módulo       Resto da                    x = 10 % 3
+                             divisão dos operandos
+
+  ++          Incremento     Soma 1 ao                   y = x++
+                             valor da variável           
+
+  --          Decremento     Subtrai 1 do                y = x--
+                             valor da variável    
+
+
+
+DOM = Document Object Model
+
+- Página em HTML
+
+BOM = Browser Object Model
+
+Qual é o uso do BOM?
+Resp: Selecionar os Objetos Existentes no Navegador
+
+(.método) é para acessar ou buscar iténs dentro do documento
+
+* Objetos:
+
+- window
+- document
+- navigator
+- frames
+- location
+- history
+- screen
