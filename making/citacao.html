@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Banner Rotativo</title>
+    </head>
+    <script type="text/javascript">
+        var citacao = [];
+        citacao[0] = 'Aquieta minh`alma, faz meu coração ouvir tua voz';
+        citacao[1] = 'Plano perfeito, mistério da graça que me resgatou';
+        citacao[2] = 'Tua glória me faz voar';
+        citacao[3] = 'Se não mereço apenas tem chamar de Pai';
+
+        contador = 0;
+
+        function exibeTexto(){
+            document.getElementById('texto').innerHTML = citacao[contador];
+            
+            contador++
+            
+            if(contador == citacao.length){
+                contador = 0;
+            }
+
+            setTimeout('exibeTexto()', 1000)
+        }
+    </script>
+    <body onload="exibeTexto();">
+        <h1>Citações</h1>
+        <div id="texto">Victor</div>
+    </body>
+</html>
