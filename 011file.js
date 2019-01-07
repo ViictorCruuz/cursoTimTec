@@ -11,7 +11,7 @@ var novoNumero = 0;
 // 
 var citacao = [];
 citacao[0] = 'Seja o melhor em tudo o que você se propõe a fazer!';
-citacao[1] = 'Se não der certo, é porque você não tentou!';
+citacao[1] = 'Se nada der errado, é porque você não está tentando pra valer';
 citacao[2] = 'Que a força esteja com você!';
 // 
 var cor = [];

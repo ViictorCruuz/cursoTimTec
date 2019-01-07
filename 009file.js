@@ -10,7 +10,7 @@ function contraste(){
 
     incremento++;
     // limitador
-    if (incremento > cor.lenght){
+    if(incremento > cor.lenght){
         incremento = 0;
     }
     // document.write(cor);
@@ -22,7 +22,7 @@ function contraste(){
         document.getElementById("texto").style.color = "#FFF";
     }else{
         document.getElementById("texto").style.color = "#000";
-    }
+    
     */
     //    
 };

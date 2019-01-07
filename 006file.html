@@ -5,10 +5,10 @@
     <script type="text/javascript">
  
         var banners = ["index.jpeg",
-        "michael.jpeg","git.jpeg"];
+            "michael.jpeg","git.jpeg"];
         
         var alternativo = ["texto 1", "texto 2", "texto 3"];
-        var título = ["parangaricotiriairruaro","título 2","algum title"];
+        var título = ["cavaco","título 2","algum title"];
 
         var contador = 0;
 
@@ -18,6 +18,8 @@
             document.images[0].title = título[contador];
 
             contador++
+
+            console.log(alternativo)
 
             if(contador == banners.length){
                 contador = 0;
