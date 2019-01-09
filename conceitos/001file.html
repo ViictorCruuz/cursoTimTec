@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Primeira Interação</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+        <script type="text/javascript">
+        
+        function clique(){
+            $('#oi').text('Bom Dia !!');
+        }
+
+            $(document).ready(function(){
+                $('h1').click(function(){
+                    $(this).css({
+                        'border':'solid 1px red',
+                        'background':'pink',
+                    });
+                }); //encerra $('h1').click()
+
+
+                    $('ul li').click(function(){
+                        $(this).css({
+                            'border':'solid 1px red',
+                            'background':'blue',
+                            'color':'#fff'             
+                        });
+                    });
+            });//encerra o $(document).ready()
+        </script>
+    </head>
+    
+    <body>
+
+    <article id="oi" onclick="clique()">Teste</article>
+
+    <h1 id="borda">Título</h1>
+    <h1>Título 1</h1>
+    <h1>Título 2</h1>
+    <h1>Título 3</h1>    
+
+    <ul>
+        <li>Bananas</li>
+        <li>Limões</li>
+        <li>Siriguelas</li>
+        <li>Graviolas</li>
+    </ul>
+    
+    </body>
+</html>

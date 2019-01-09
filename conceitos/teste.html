@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Primeira implementação da Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $("body").html("<p>Escrever</p>");
+        $("body").append("<p>Adicionar</p>");
+        $("body").append("<h1>Teste de Texto</h1>");
+        $("p").attr("class","nomeDaClasse");
+        $(".nomeDaClasse").css({
+            "background":"#FCC",
+            "line-height":"20px",
+            "padding":"10px",
+            "text-align":"center",
+        });
+    });
+         
+    </script>
+    </head>
+
+    <body>
+
+        
+    </body>
+</html>
